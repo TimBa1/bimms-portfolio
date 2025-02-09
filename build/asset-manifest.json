@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.080f621c.css",
+    "main.js": "/static/js/main.ec6ba26f.js",
+    "static/media/agric.svg": "/static/media/agric.baac24c1f42c5e58d11a38015cca0d85.svg",
+    "static/media/image (1).svg": "/static/media/image (1).5a7f339a868a321f34efaff6a4939ca3.svg",
+    "static/media/Frame 1171280413 (2).svg": "/static/media/Frame 1171280413 (2).b7f88294a2a33f4c6e11c81a71b40ed8.svg",
+    "static/media/Frame 11712804131.svg": "/static/media/Frame 11712804131.7890b4e10b7041a7933e2434c345b002.svg",
+    "static/media/Frame 1171280495 (1).svg": "/static/media/Frame 1171280495 (1).65c1142af2fea8423608c3bba1c3edfe.svg",
+    "static/media/Frame 1171280413 (3).svg": "/static/media/Frame 1171280413 (3).070734d04d9a42eeca00c56036162910.svg",
+    "static/media/Frame 1171280413.svg": "/static/media/Frame 1171280413.b6d541db8a17c8c2604abd44b46bb499.svg",
+    "static/media/Frame 1171280495.svg": "/static/media/Frame 1171280495.0171a7ee086ec074d063502aa7ab310a.svg",
+    "static/media/Frame 1171280413 (1).svg": "/static/media/Frame 1171280413 (1).ecd8609614c16f491beecca029dd862a.svg",
+    "static/media/Frame 1171280413 (4).svg": "/static/media/Frame 1171280413 (4).12c08db1b39ac7c832f9301907aff7ca.svg",
+    "static/media/Frame 1171280496.svg": "/static/media/Frame 1171280496.b9746062b21d2defd9e53e205badf87a.svg",
+    "static/media/Frame 1171280496 (1).svg": "/static/media/Frame 1171280496 (1).17decff67b0cf12d10e94c11aae1f9f9.svg",
+    "static/media/Frame 1171280413 (5).svg": "/static/media/Frame 1171280413 (5).b79ea89d56cdc69ae5ab1b6da4e776cd.svg",
+    "static/media/logo.svg": "/static/media/logo.27faaee0b47bbe1490c8a4dcc30b135b.svg",
+    "static/media/mdi_github.svg": "/static/media/mdi_github.ef6ed3a7e180e4b08d11b6cfe8ec37d9.svg",
+    "static/media/mdi_linkedin.svg": "/static/media/mdi_linkedin.827ec3420fa659ca9cd91b7d7138bef5.svg",
+    "static/media/ham.svg": "/static/media/ham.f94b9038c65d22788a22710186cc5339.svg",
+    "static/media/mdi_twitter.svg": "/static/media/mdi_twitter.6dba8bad4be8cf4729b7919ea5db9127.svg",
+    "index.html": "/index.html",
+    "static/media/ic_baseline-email.svg": "/static/media/ic_baseline-email.7315601366d3a8d8f5c8936ce8c8d2f8.svg",
+    "main.080f621c.css.map": "/static/css/main.080f621c.css.map",
+    "main.ec6ba26f.js.map": "/static/js/main.ec6ba26f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.080f621c.css",
+    "static/js/main.ec6ba26f.js"
+  ]
+}
