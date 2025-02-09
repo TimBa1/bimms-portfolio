@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Lora", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Lora", serif !important;
+  color: #1E1E1E;
+;
+}
+button{
+  font-family: "Lora", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
