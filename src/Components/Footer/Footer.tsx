@@ -72,22 +72,21 @@ const Foot = styled.div`
     margin-top: 3rem;
     @media screen and (max-width: 900px) {
       margin-top: 2rem;
-       margin-bottom:1rem;
+      margin-bottom: 1rem;
     }
   }
   .close {
     width: 68% !important;
-     margin:0 auto;
+    margin: 0 auto;
     @media screen and (max-width: 900px) {
       width: 100%;
-     
     }
   }
 `;
 
 function Footer() {
   return (
-    <Foot>
+    <Foot id="footer">
       <div className="main-container">
         <p className="main-title" style={{ color: "white" }}>
           Lets Collaborate
@@ -100,20 +99,22 @@ function Footer() {
         </div>
       </div>
       <div className="buttons">
-        <Button bg="white" color="#2B2320" text="Send Email" />
+        <a href="mailto:demolara@yahoo.com">
+          <Button bg="white" color="#2B2320" text="Send Email" />
+        </a>
         <Button bg="#2B2320" color="#FFFFFF" border="white" text="Let's Talk" />
       </div>
       <div className="link">
-        <a href="">
+        <a href="https://www.linkedin.com/in/abimbola-bakare/">
           <img src={link} alt="socials" />
         </a>
-        <a href="">
+        <a href="https://github.com/AbimbolaBakare">
           <img src={git} alt="socials" />
         </a>
-        <a href="">
+        <a href="mailto:demolara@yahoo.com">
           <img src={mail} alt="socials" />
         </a>
-        <a href="">
+        <a href="https://x.com/Bimm_s">
           <img src={twi} alt="socials" />
         </a>
       </div>

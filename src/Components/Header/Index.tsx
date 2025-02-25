@@ -112,7 +112,9 @@ function Header() {
         clean, efficient, and user-centered solutions."
       </p>
       <div className="buttons">
-        <Button bg="#2B2320" color="#FFFFFF" text="Let's Talk" />
+        <a href="#footer">
+          <Button bg="#2B2320" color="#FFFFFF" text="Let's Talk" />
+        </a>
         <Button bg="transparent" color="#2B2320" text="Get Resume" />
       </div>
     </Head>

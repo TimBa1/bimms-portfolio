@@ -19,6 +19,7 @@ const Buttons = styled.button<ButtonProps>`
   background-color: ${(props) => props.bg};
   font-size: 20px;
   font-weight: 600;
+  cursor:pointer;
 `;
 
 function Button({

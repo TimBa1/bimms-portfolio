@@ -87,9 +87,9 @@ const SideIcons = styled.div`
 const Name = styled.div`
   display: flex;
   justify-content: center;
-  color:${({ theme }) => theme.main};
-  font-weight:700;
-  font-size:30px;
+  color: ${({ theme }) => theme.main};
+  font-weight: 700;
+  font-size: 30px;
   .logo {
     height: 40px;
     color: black !important;
@@ -98,16 +98,15 @@ const Name = styled.div`
     }
   }
   @media screen and (max-width: 990px) {
-      font-size:25px;
-    }
+    font-size: 25px;
+  }
 `;
 
 const Middle = styled.div`
   display: flex;
   justify-content: center;
   @media screen and (max-width: 990px) {
-    display:none;
-
+    display: none;
   }
 `;
 function Navbar({ openSideDrawer }) {
@@ -139,7 +138,7 @@ function Navbar({ openSideDrawer }) {
     <StyledHeader>
       <Wrapper>
         <Name>
-        BIMM'S
+          BIMM'S
           {/* <img src={logo} className="logo" alt="logo" /> */}
         </Name>
         <Middle>
@@ -158,7 +157,9 @@ function Navbar({ openSideDrawer }) {
             </NavButton>
           </SideIcons>
           <div className="hide">
-            <Button bg="#2B2320" color="#FFFFFF" text="Get in Touch" />
+            <a href="#footer">
+              <Button bg="#2B2320" color="#FFFFFF" text="Get in Touch" />
+            </a>
           </div>
         </Right>
       </Wrapper>
