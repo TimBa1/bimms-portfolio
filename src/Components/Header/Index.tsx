@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import me from "../../assets/icons/image (1).svg";
 import Button from "../Button";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Head = styled.div`
   background-color: ${({ theme }) => theme.background};
@@ -65,13 +66,43 @@ const Head = styled.div`
 `;
 
 function Header() {
+  const titles = [
+    "Creative Developer",
+    "Fullstack Developer",
+    "Frontend Engineer",
+    "UI/UX Enthusiast",
+    "Web Developer",
+    "Software Engineer"
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % titles.length);
+    }, 2500); // Change every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Head id="head">
       <img src={me} className="img" alt="passport" />
 
       <div className="title">
         <p>I am Abimbola a</p>
-        <p className="p">Creative Developer</p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={titles[index]}
+            className="p"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.5 }}
+          >
+            {titles[index]}
+          </motion.p>
+        </AnimatePresence>
       </div>
       <p className="content">
         As a <span>solution-driven Frontend Engineer</span> passionate about

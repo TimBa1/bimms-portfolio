@@ -42,43 +42,51 @@ export const Features = [
 export const Experiences = [
   {
     id: 1,
-    company: "Grandilo Technology",
-    role: "Software Intern",
-    duration: "Oct 2017 - Nov 2020",
-    description:
-      "Grandilo is a software development company, With Grandilo you can accept payments, send payouts, onboard customers and more offline from any where in nigeria ."
+    company: "Whering",
+    role: "Software Developer",
+    duration: "Aug 2022 - Present",
+    description: [
+      "Developed the web app using Next.js, providing users with an intuitive platform for easy wardrobe management and adding social features like viewing and following friends’ wardrobes",
+      "Designed and developed the Whering 2.0 Chrome extension from scratch, overcoming challenges related to authentication, social login, CORS issues, script injection, and compatibility with web pages",
+      "Regularly update the website to implement best practices in performance optimization and accessibility, boosting SEO rankings and organic visibility, increasing downloads to 5M+ across platforms",
+      "Initiated the creation of a component library using Storybook, ensuring consistent UI components across the app and promoting reusability for future development",
+      "Led the effort to localize the Whering web pages, ensuring that the platform is accessible to a global audience and enhancing user experience across different languages and regions"
+    ]
   },
   {
     id: 2,
-    company: "Duro Networks",
-    role: "Frontend Engineer",
-    duration: "Oct 2017 - Nov 2020",
-    description:
-      "DuroNetworks is a financial technology organization that provides fast and convenient transaction. Worked on the following products alongside team members from scratch. "
+    company: "TRAKTION (Acquired by IDX)",
+    role: "Software Developer",
+    duration: "Nov 2021 - Jun 2022",
+    description: [
+      "Achieved 100% test coverage for components using Jest and React Testing Library",
+      "Ensured high-quality code through rigorous testing practices, enhancing application reliability",
+      "Utilized JavaScript, React, and Redux to develop dynamic, responsive, and browser-compatible pages"
+    ]
   },
+
   {
     id: 3,
-    company: "Kudi Inc",
+    company: "Nomba (Formerly Kudi Inc)",
     role: "Software Developer",
-    duration: "Oct 2017 - Nov 2020",
-    description:
-      " Kudi is a financial technology organization that aims at making financial services accessible and affordable to all Africans across the world, through its agent network, especially the underbanked and unbanked. "},
+    duration: "May 2021 - Nov 2021",
+    description: [
+      "Enhanced customer satisfaction by 30% and reduced reported bug issues by 15% by improving the Kudi Marketplace, incorporating new user-focused designs and features",
+      "Utilized JavaScript, React, and Redux to design and build numerous dynamic, responsive, and browser-compatible pages; improved application performance, and increased conversion rates by 20%",
+      "Reduced user-reported bugs by building comprehensive test coverage for components using React Testing Library, ensuring higher code reliability and stability"
+    ]
+  },
+
   {
     id: 4,
-    company: "Tracktion",
-    role: "Software Developer",
-    duration: "Oct 2017 - Nov 2020",
-    description:
-      "Traktion is a new model that helps ambitious startups and scaleups grow in a more agile and efficient way.Traktion is brings transparency into the way businesses hire, source, and engage freelance digital marketing agencies and freelancers through data."
-  },
-  {
-    id: 5,
-    company: "Wearing",
-    role: "Software Developer",
-    duration: "Oct 2017 - Nov 2020",
-    description:
-      "Grandilo is a software development company, With Grandilo you can accept payments, send payouts, onboard customers and more offline from any where in nigeria ."
-  },
-   
-
+    company: "Duro Networks",
+    role: "Frontend Engineer",
+    duration: "july 2020 - june 2021",
+    description: [
+      "DuroNetworks is a financial technology organization that provides fast and convenient transaction. Worked on the following products alongside team members from scratch. ",
+      "Collaborated with an agile team of 6 members, translating UI/UX design wireframes into high-quality React code, resulting in responsive, visually appealing web applications",
+      "Spearheaded frontend team in the end-to-end product development of 3 financial technology solutions: GETRIPAY, GETRIVEST, and GETRISHOP, serving users across Africa",
+      "Led the implementation of key features such as fund transfers, bill payments, savings, virtual cards, loans, QR payments, and investments, ensuring high-quality, user-friendly experiences"
+    ]
+  }
 ];

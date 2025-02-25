@@ -1,24 +1,29 @@
 import styled from "styled-components";
 import Backdrop from "./Backdrop";
+import { useEffect, useState } from "react";
 
 
-const NavLink = styled.a`
+export const NavLink = styled.a`
  color: ${props=> props.theme.main} ;
  text-decoration: none;
  font-size: 18px;
  letter-spacing: 1.44px;
  cursor: pointer;
+ border-bottom: ${(props) => (props.active ? `2px solid ${props.theme.main}` : "none")};
+transition: border-bottom 0.3s ease-in-out;
  `
 
 
-const StyledNav = styled.nav`
+export const StyledNav = styled.nav`
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   margin:1rem 0 1rem 0;
   padding: 0;
   gap:1rem;
 
- 
+  @media screen and (max-width: 990px) {
+    flex-direction: column;
+}
 `;
 const Wrapper = styled.div`
   width: fit-content;
@@ -44,15 +49,42 @@ const Wrapper = styled.div`
 
 
 const SideDrawer = ({ open, closed }) => {
+  
+  const sections = ["head", "featured", "experience", "stack"];
+
+    const [activeSection, setActiveSection] = useState("");
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        let currentSection = "";
+  
+        sections.forEach((id) => {
+          const section = document.getElementById(id);
+          if (section) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 100 && rect.bottom >= 100) {
+              currentSection = id;
+            }
+          }
+        });
+  
+        setActiveSection(currentSection);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  
   return (
     <>
       <Backdrop show={open} clicked={closed} />
       <Wrapper show={open}>
         <StyledNav>
-          <NavLink href={'#head'}>Home</NavLink>
-          <NavLink href={'#featured'}>Featured Work</NavLink>
-          <NavLink href={'#experience'}>Experience</NavLink>
-          <NavLink href={'#stack'}>Skills</NavLink>
+        {sections.map((id) => (
+        <NavLink key={id} href={`#${id}`} active={activeSection === id}>
+          {id.charAt(0).toUpperCase() + id.slice(1)}
+        </NavLink>
+      ))}
         </StyledNav>
       </Wrapper>
     </>

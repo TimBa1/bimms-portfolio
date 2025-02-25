@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import agric from "../../assets/icons/agric.svg";
 import { Features } from "../Data";
+import { motion } from "motion/react";
 
 const Wrapper = styled.div`
   .container {
@@ -20,24 +21,22 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
+
     @media screen and (max-width: 900px) {
       flex-direction: column;
-      padding:10px 10px;
+      padding: 10px 10px;
     }
   }
 
- 
   .box.reverse {
     flex-direction: row-reverse;
-    
+
     @media screen and (max-width: 900px) {
       /* For mobile, we override the reverse by going back to column */
       flex-direction: column;
     }
   }
 
- 
   .left {
     width: 50%;
     @media screen and (max-width: 900px) {
@@ -52,7 +51,7 @@ const Wrapper = styled.div`
       color: ${({ theme }) => theme.main};
       @media screen and (max-width: 900px) {
         font-size: 18px;
-        margin-top:1rem;
+        margin-top: 1rem;
       }
     }
     .role {
@@ -77,9 +76,9 @@ const Wrapper = styled.div`
       margin: 2rem 0;
       display: flex;
       gap: 1rem;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       @media screen and (max-width: 900px) {
-        margin:1.5rem 0;
+        margin: 1.5rem 0;
       }
     }
     .but {
@@ -120,40 +119,112 @@ const Wrapper = styled.div`
 function Featured() {
   return (
     <Wrapper id="featured">
-      <div className="main-container">
-        <p className="main-title">Featured Work</p>
-        <p className="main-text">
-          I've worked on a variety of projects, from simple websites to complex
-          web applications. Here are a few of my favourites.
-        </p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <div className="main-container">
+          <motion.p
+            className="main-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Featured Work
+          </motion.p>
+          <motion.p
+            className="main-text"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            I've worked on a variety of projects, from simple websites to
+            complex web applications. Here are a few of my favorites.
+          </motion.p>
+        </div>
 
-      <div className="container">
-        {Features.map((s: any, index: number) => (
-          // Add the "reverse" class for every other item on desktop
-          <div className={`box ${index % 2 !== 0 ? "reverse" : ""}`} key={s.id}>
-            <div className="left">
-              <h4 className="company">{s.company}</h4>
-              <h5 className="role">{s.role}</h5>
-              <h6 className="desc">{s.description}</h6>
-              <div className="stack">
-                {s.stack.map((tr: any) => (
-                  <span key={tr} className="but">
-                    {tr}
-                  </span>
-                ))}
+        <div className="container">
+          {Features.map((s: any, index: number) => (
+            <motion.div
+              key={s.id}
+              className={`box ${index % 2 !== 0 ? "reverse" : ""}`}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: index * 0.2
+              }}
+              viewport={{ once: true }}
+            >
+              <div className="left">
+                <motion.h4
+                  className="company"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                >
+                  {s.company}
+                </motion.h4>
+                <motion.h5
+                  className="role"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                >
+                  {s.role}
+                </motion.h5>
+                <motion.h6
+                  className="desc"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                >
+                  {s.description}
+                </motion.h6>
+                <motion.div
+                  className="stack"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  {s.stack.map((tr: any) => (
+                    <motion.span
+                      key={tr}
+                      className="but"
+                      initial={{ opacity: 0, y: 5 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.6 }}
+                    >
+                      {tr}
+                    </motion.span>
+                  ))}
+                </motion.div>
+                <motion.div
+                  className="link"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                >
+                  <a href="#">Github</a>
+                  <a href="#">View Site</a>
+                </motion.div>
               </div>
-              <div className="link">
-                <a href="#">Github</a>
-                <a href="#">View Site</a>
-              </div>
-            </div>
-            <div className="right">
-              <img src={agric} alt="agric" />
-            </div>
-          </div>
-        ))}
-      </div>
+
+              <motion.div
+                className="right"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+              >
+                <img src={agric} alt="agric" />
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </Wrapper>
   );
 }
