@@ -48,7 +48,7 @@ export const Features = [
     description:
       "Led the implementation of key features such as fund transfers, bill payments, savings, virtual cards, loans, QR payments, and investments, ensuring high-quality, user-friendly experiences",
     stack: ["React", "Tailwind", "Angular", "TypeScript"],
-    img: img
+    img: '/images/getripay.jpeg'
   }
 ];
 
