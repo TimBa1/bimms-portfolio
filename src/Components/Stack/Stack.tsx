@@ -12,11 +12,16 @@ import nine from "../../assets/icons/Frame 1171280496.svg";
 import ten from "../../assets/icons/Frame 1171280496 (1).svg";
 import eleven from "../../assets/icons/Frame 1171280495 (1).svg";
 import { motion } from "framer-motion";
+import bg from "../../assets/icons/bg.svg";
 
 const Wrapper = styled.div`
   margin: 6rem 0 0 0;
   padding: 1rem 0 7rem 0;
   background-color: ${({ theme }) => theme.background};
+  background-image: url(${bg});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .wrap {
     display: flex;
@@ -72,11 +77,11 @@ const icons = [
   three,
   four,
   five,
+  ten,
   six,
   seven,
   eight,
   nine,
-  ten,
   eleven
 ];
 

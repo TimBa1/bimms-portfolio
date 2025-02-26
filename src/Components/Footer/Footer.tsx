@@ -118,7 +118,7 @@ function Footer() {
           <img src={twi} alt="socials" />
         </a>
       </div>
-      <div className="bottom">Copyright@2024 Portfolio - Timba Services</div>
+      <div className="bottom">Copyright@2024 Portfolio - TimBa Services</div>
     </Foot>
   );
 }

@@ -1,39 +1,52 @@
 import img from "../assets/icons/agric.svg";
+// import site from '../../public/images/site.png'
+// import extension from '../../public/images/extention.jpg'
+// import web from '../../public/images/app.jpg'
 
 export const Features = [
   {
     id: 1,
-    company: "Getripay",
-    role: "Frontend Developer",
+    company: "whering Chrome Extension",
+    role: "Software Developer",
     description:
-      "Provides users with bank accounts and has features of inter and intra bank transfers, bill payments(airtime, data, cable tv etc), loans, bulk payments. GetriSave - GetriSave allows users to cultivate an healthy savings habit either through indiviual savings, group savings or by enabling auto save.",
-    stack: ["React", "Tailwind", "Angular", "TypeScript"],
-    img: img
+      "Designed and developed the Whering 2.0 Chrome extension from scratch, overcoming challenges related to authentication, social login, CORS issues, script injection, and compatibility with web pages",
+    stack: ["React", "Styled Component", "TypeScript"],
+    img: "/images/extention.jpg"
   },
   {
     id: 2,
-    company: "Agrific",
+    company: "whering web application",
     role: "Software Developer",
     description:
-      "Agrifc is a B2B2C platform aiming to be a comprehensive trade hub that connects Nigeria farm producers and agro-commodity businesses with local and international buyers.",
-    stack: ["React", "Tailwind", "Angular", "TypeScript"],
-    img: img
+      "Developed the web app using Next.js, providing users with an intuitive platform for easy wardrobe management and adding social features like viewing and following friends’ wardrobes",
+    stack: ["jest", "Next.js", "Redux", "Styled Component", "TypeScript"],
+    img: "/images/app.jpg"
   },
   {
     id: 3,
+    company: "Whering Website",
+    role: "Software Developer",
+    description:
+      "Regularly update the website to implement best practices in performance optimization and accessibility, boosting SEO rankings and organic visibility, increasing downloads to 5M+ across platforms",
+    stack: ["React", "Tailwind", "Angular"],
+    img: "/images/site.png"
+  },
+
+  {
+    id: 4,
     company: "Kudi Marketplace",
     role: "Frontend Developer/Engineer",
     description:
       "With Kudi Marketplace you can accept payments, send payouts, onboard customers and more offline from any where in nigeria .",
-    stack: ["React", "Tailwind", "Angular"],
-    img: img
+    stack: ["React", "Tailwind", "Javascript"],
+    img: "/images/marketplace-kudi.jpeg"
   },
   {
-    id: 4,
+    id: 5,
     company: "Getripay",
     role: "Frontend Developer",
     description:
-      "With Kudi Marketplace you can accept payments, send payouts, onboard customers and more offline from any where in nigeria .",
+      "Led the implementation of key features such as fund transfers, bill payments, savings, virtual cards, loans, QR payments, and investments, ensuring high-quality, user-friendly experiences",
     stack: ["React", "Tailwind", "Angular", "TypeScript"],
     img: img
   }

@@ -7,10 +7,14 @@ export const NavLink = styled.a`
  color: ${props=> props.theme.main} ;
  text-decoration: none;
  font-size: 18px;
+ font-weight:600;
  letter-spacing: 1.44px;
  cursor: pointer;
  border-bottom: ${(props) => (props.active ? `2px solid ${props.theme.main}` : "none")};
-transition: border-bottom 0.3s ease-in-out;
+ transition: border-bottom 0.3s ease-in-out;
+ @media screen and (max-width: 990px) {
+     
+}
  `
 
 
@@ -19,10 +23,12 @@ export const StyledNav = styled.nav`
   flex-direction: row;
   margin:1rem 0 1rem 0;
   padding: 0;
-  gap:1rem;
+  gap:2rem;
 
   @media screen and (max-width: 990px) {
     flex-direction: column;
+    gap:1rem;
+
 }
 `;
 const Wrapper = styled.div`

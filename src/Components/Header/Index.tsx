@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import me from "../../assets/icons/image (1).svg";
+import bg from "../../assets/icons/bg.svg";
 import Button from "../Button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +13,10 @@ const Head = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(${bg});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   img {
     width: 200px;

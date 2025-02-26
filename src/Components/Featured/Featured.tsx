@@ -102,12 +102,15 @@ const Wrapper = styled.div`
   }
 
   .right {
+    width:45%;
+    
     @media screen and (max-width: 900px) {
       order: 1; /* Force right to always be at the top on mobile */
       width: 100%;
     }
     img {
       height: 350px;
+      width:100%;
       @media screen and (max-width: 900px) {
         height: auto; /* Adjust as needed */
         width: 100%;
@@ -219,7 +222,7 @@ function Featured() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
               >
-                <img src={agric} alt="agric" />
+                <img src={s.img} alt="agric" />
               </motion.div>
             </motion.div>
           ))}
