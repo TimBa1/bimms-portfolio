@@ -5,6 +5,7 @@ import { Features } from "../Data";
 import { motion } from "motion/react";
 
 const Wrapper = styled.div`
+  overflow-x : hidden !important;
   .container {
     width: 90%;
     margin: 0 auto;
@@ -102,15 +103,15 @@ const Wrapper = styled.div`
   }
 
   .right {
-    width:45%;
-    
+    width: 45%;
+
     @media screen and (max-width: 900px) {
       order: 1; /* Force right to always be at the top on mobile */
       width: 100%;
     }
     img {
       height: 350px;
-      width:100%;
+      width: 100%;
       @media screen and (max-width: 900px) {
         height: auto; /* Adjust as needed */
         width: 100%;
@@ -153,14 +154,14 @@ function Featured() {
             <motion.div
               key={s.id}
               className={`box ${index % 2 !== 0 ? "reverse" : ""}`}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }} // Reduce the x distance
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.8,
                 ease: "easeOut",
                 delay: index * 0.2
               }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.3 }} // Adjust viewport threshold
             >
               <div className="left">
                 <motion.h4
