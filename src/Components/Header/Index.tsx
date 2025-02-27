@@ -67,6 +67,7 @@ const Head = styled.div`
         font-size: 14px;
       }
     }
+    height:80vh;
   }
 `;
 
@@ -92,7 +93,7 @@ function Header() {
 
   return (
     <Head id="head">
-      <img src={me} className="img" alt="passport" />
+      {/* <img src={me} className="img" alt="passport" /> */}
 
       <div className="title">
         <p>I am Abimbola a</p>

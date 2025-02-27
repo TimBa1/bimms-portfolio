@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import agric from "../../assets/icons/agric.svg";
 import { Features } from "../Data";
 import { motion } from "motion/react";
 
@@ -212,8 +211,7 @@ function Featured() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  <a href="#">Github</a>
-                  <a href="#">View Site</a>
+                  <a href={s.link}>View Site</a>
                 </motion.div>
               </div>
 

@@ -86,7 +86,7 @@ const Wrapper = styled.div`
       border-radius: 10px;
       @media screen and (max-width: 900px) {
         font-size: 14px;
-        padding: 15px;
+        padding: 10px 15px 25px 15px;
       }
       .p {
         font-size: 20px;

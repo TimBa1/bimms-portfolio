@@ -1,17 +1,13 @@
-import img from "../assets/icons/agric.svg";
-// import site from '../../public/images/site.png'
-// import extension from '../../public/images/extention.jpg'
-// import web from '../../public/images/app.jpg'
-
 export const Features = [
   {
     id: 1,
     company: "whering Chrome Extension",
     role: "Software Developer",
     description:
-      "Designed and developed the Whering 2.0 Chrome extension from scratch, overcoming challenges related to authentication, social login, CORS issues, script injection, and compatibility with web pages",
-    stack: ["React", "Styled Component", "TypeScript"],
-    img: "/images/extention.jpg"
+      "Designed and developed the Whering 2.0 Chrome extension from scratch, overcoming challenges related to authentication, social login, script injection, and compatibility with web pages",
+    stack: ["React", "Chrome Extension", "TypeScript"],
+    img: "/images/extention.jpg",
+    link: "https://whering.co.uk/digital-wardrobe-chrome-extension"
   },
   {
     id: 2,
@@ -19,8 +15,9 @@ export const Features = [
     role: "Software Developer",
     description:
       "Developed the web app using Next.js, providing users with an intuitive platform for easy wardrobe management and adding social features like viewing and following friends’ wardrobes",
-    stack: ["jest", "Next.js", "Redux", "Styled Component", "TypeScript"],
-    img: "/images/app.jpg"
+    stack: ["Jest", "Next.js", "Redux", "Bootstrap", "TypeScript"],
+    img: "/images/app.jpg",
+    link: "https://app.whering.co.uk/login"
   },
   {
     id: 3,
@@ -28,8 +25,9 @@ export const Features = [
     role: "Software Developer",
     description:
       "Regularly update the website to implement best practices in performance optimization and accessibility, boosting SEO rankings and organic visibility, increasing downloads to 5M+ across platforms",
-    stack: ["React", "Tailwind", "Angular"],
-    img: "/images/site.png"
+    stack: ["Next.js", "Bootstrap", "TypeScript"],
+    img: "/images/site.png",
+    link: "https://whering.co.uk/"
   },
 
   {
@@ -37,9 +35,10 @@ export const Features = [
     company: "Kudi Marketplace",
     role: "Frontend Developer/Engineer",
     description:
-      "With Kudi Marketplace you can accept payments, send payouts, onboard customers and more offline from any where in nigeria .",
-    stack: ["React", "Tailwind", "Javascript"],
-    img: "/images/marketplace-kudi.jpeg"
+      "With Kudi Marketplace you can accept payments, send payouts, onboard customers and more offline from any where in Nigeria .",
+    stack: ["React", "Bootstrap", "Javascript"],
+    img: "/images/marketplace-kudi.jpeg",
+    link: "#"
   },
   {
     id: 5,
@@ -47,8 +46,9 @@ export const Features = [
     role: "Frontend Developer",
     description:
       "Led the implementation of key features such as fund transfers, bill payments, savings, virtual cards, loans, QR payments, and investments, ensuring high-quality, user-friendly experiences",
-    stack: ["React", "Tailwind", "Angular", "TypeScript"],
-    img: '/images/getripay.jpeg'
+    stack: ["React", "SCSS", "Redux", "Bootstrap", "TypeScript"],
+    img: "/images/getripay.jpeg",
+    link: "https://online.getripay.com"
   }
 ];
 
@@ -61,9 +61,7 @@ export const Experiences = [
     description: [
       "Developed the web app using Next.js, providing users with an intuitive platform for easy wardrobe management and adding social features like viewing and following friends’ wardrobes",
       "Designed and developed the Whering 2.0 Chrome extension from scratch, overcoming challenges related to authentication, social login, CORS issues, script injection, and compatibility with web pages",
-      "Regularly update the website to implement best practices in performance optimization and accessibility, boosting SEO rankings and organic visibility, increasing downloads to 5M+ across platforms",
-      "Initiated the creation of a component library using Storybook, ensuring consistent UI components across the app and promoting reusability for future development",
-      "Led the effort to localize the Whering web pages, ensuring that the platform is accessible to a global audience and enhancing user experience across different languages and regions"
+      "Regularly update the website to implement best practices in performance optimization and accessibility, boosting SEO rankings and organic visibility, increasing downloads to 5M+ across platforms"
     ]
   },
   {
@@ -96,7 +94,6 @@ export const Experiences = [
     role: "Frontend Engineer",
     duration: "july 2020 - june 2021",
     description: [
-      "DuroNetworks is a financial technology organization that provides fast and convenient transaction. Worked on the following products alongside team members from scratch. ",
       "Collaborated with an agile team of 6 members, translating UI/UX design wireframes into high-quality React code, resulting in responsive, visually appealing web applications",
       "Spearheaded frontend team in the end-to-end product development of 3 financial technology solutions: GETRIPAY, GETRIVEST, and GETRISHOP, serving users across Africa",
       "Led the implementation of key features such as fund transfers, bill payments, savings, virtual cards, loans, QR payments, and investments, ensuring high-quality, user-friendly experiences"

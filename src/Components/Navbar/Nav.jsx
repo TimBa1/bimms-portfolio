@@ -138,7 +138,7 @@ function Navbar({ openSideDrawer }) {
     <StyledHeader>
       <Wrapper>
         <Name>
-          BIMM'S
+          BIMMS
           {/* <img src={logo} className="logo" alt="logo" /> */}
         </Name>
         <Middle>
